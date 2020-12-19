@@ -52,6 +52,8 @@ public class OrderFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setNestedScrollingEnabled(false);  //避免滑动卡顿
         refreshLayout = (RefreshLayout)view.findViewById(R.id.refreshLayout);
         wzy();
     }
