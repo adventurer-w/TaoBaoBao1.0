@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout233"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:paddingVertical="10dp"
+    android:paddingStart="10dp">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="0dp"
+            android:src="@drawable/no_pic" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"
+            android:background="#A6000000"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+    >
+
+        <LinearLayout
+            android:id="@+id/linearLayout233"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="商品商品商商品"
+                android:textColor="#CD000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:text="修改信息"
+                android:textColor="#80000000"
+                android:gravity="right"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="12"
+            android:text="￥99999"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:gravity="end"
+            android:text="库存88"
+            android:textColor="#80000000" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="0.2dp"
+            android:layout_weight="0"
+            android:background="#A6000000" />
+    </LinearLayout>
+</LinearLayout>

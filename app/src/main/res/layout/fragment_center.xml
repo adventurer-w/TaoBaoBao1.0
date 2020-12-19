@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:windowSoftInputMode="adjustPan">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+
+        <View
+            android:id="@+id/here1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="50dp"
+            android:background="#99000000" />
+
+
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="66dp"
+            android:layout_toLeftOf="@+id/here1"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:text="用户名"
+            android:lines="1"
+            android:layout_centerHorizontal="true"
+           android:layout_toRightOf="@+id/here1"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/name"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/picture"
+            android:layout_marginStart="20dp"
+           android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/sex_boy" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#99000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <RelativeLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改密码"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_6"
+                android:textSize="30dp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/change"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/password">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#99000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改我的头像"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_6"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/name233"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/change">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#99000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改我的昵称"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_6"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sex233"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_below="@id/name233">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="#99000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="修改我的性别。"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_6"
+                android:textSize="30dp" />
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/exit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="230dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:id="@+id/pic_2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_cancel_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="切换用户"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/pic_2"
+                app:layout_constraintStart_toStartOf="@+id/pic_2"
+                app:layout_constraintTop_toBottomOf="@+id/pic_2" />
+
+            <ImageView
+                android:id="@+id/pic_3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_baseline_widgets_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/pic_3"
+                android:text="切换主题"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="@+id/pic_3"
+                app:layout_constraintStart_toStartOf="@+id/pic_3"
+                app:layout_constraintTop_toBottomOf="@+id/pic_3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

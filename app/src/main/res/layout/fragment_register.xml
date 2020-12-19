@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+
+    <ImageView
+        android:id="@+id/taobao"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:src="@drawable/go_taobao" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:rotation="0"
+        android:rotationY="0">
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30dp">
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:hint="账号 (8~20个数字或字母)"
+                android:maxLength="20"
+                android:paddingVertical="10dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_cipher"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/et_account"
+                android:layout_marginTop="5dp"
+                android:hint="密码（8~16个字符）"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_cipher_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/et_cipher"
+                android:layout_marginTop="5dp"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/et_cipher_2"
+                android:layout_marginTop="5dp"
+                android:hint="昵称"
+                android:maxLength="8"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/layout_1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/my_button"
+            android:rotation="0"
+            android:text="注册"
+            android:textColor="#fdfeff"
+            android:textSize="14dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

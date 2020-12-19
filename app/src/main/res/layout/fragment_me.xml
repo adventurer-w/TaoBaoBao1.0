@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:paddingTop="30dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:src="@drawable/go_taobao" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingHorizontal="32dp">
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/white_circle"
+                android:hint="账号"
+                android:maxLength="20"
+                android:paddingVertical="15dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+
+            <EditText
+                android:id="@+id/et_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/et_1"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/white_circle"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingVertical="15dp"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_2"
+                android:paddingHorizontal="15dp">
+
+                <Button
+                    android:id="@+id/load"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="9dp"
+                    android:background="@drawable/my_button"
+                    android:text="登录"
+                    android:textColor="#fdfeff"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_1"
+            android:layout_marginTop="7dp">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_2"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/to_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="注册淘宝账号"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

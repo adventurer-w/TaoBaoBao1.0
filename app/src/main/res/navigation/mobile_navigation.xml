@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/buyFragment"
+    >
+    <fragment
+        android:id="@+id/buyFragment"
+        android:name="com.example.taobaobao.ui.buy.BuyFragment"
+        android:label="商城"
+        tools:layout="@layout/fragment_put" >
+        <action
+            android:id="@+id/action_buyFragment_to_take_it_all_Fragment"
+            app:destination="@id/take_it_all_Fragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <argument
+            android:name="goods_id"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/putFragment"
+        android:name="com.example.taobaobao.ui.put.PutFragment"
+        android:label="我的淘宝"
+        tools:layout="@layout/fragment_buy">
+        <action
+            android:id="@+id/action_putFragment_to_addFragment"
+            app:destination="@id/addFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_putFragment_to_changeFragment"
+            app:destination="@id/changeFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_putFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/meFeagment"
+        android:name="com.example.taobaobao.ui.me.MeFragment"
+        android:label="登录"
+        tools:layout="@layout/fragment_me">
+        <action
+            android:id="@+id/action_meFeagment_to_centerFeagment"
+            app:destination="@id/centerFeagment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/个人中心"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.taobaobao.ui.me.registerFragment"
+        android:label="注册"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_meFeagment"
+            app:destination="@id/meFeagment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/centerFeagment"
+        android:name="com.example.taobaobao.ui.me.centerFragment"
+        android:label="个人中心"
+        tools:layout="@layout/fragment_center">
+        <action
+            android:id="@+id/action_centerFeagment_to_meFeagment"
+            app:destination="@id/meFeagment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.taobaobao.ui.put.AddFragment"
+        android:label="添加商品"
+        tools:layout="@layout/layout_add">
+        <action
+            android:id="@+id/action_addFragment_to_putFragment"
+            app:destination="@id/putFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/take_it_all_Fragment"
+        android:name="com.example.taobaobao.ui.buy.Take_it_all_Fragment"
+        android:label="商品详情"
+        tools:layout="@layout/fragment_take_it_all">
+        <action
+            android:id="@+id/action_take_it_all_Fragment_to_buyFragment"
+            app:destination="@id/buyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeFragment"
+        android:name="com.example.taobaobao.ui.put.ChangeFragment"
+        android:label="修改商品"
+        tools:layout="@layout/fragment_changegood">
+        <action
+            android:id="@+id/action_changeFragment_to_putFragment"
+            app:destination="@id/putFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.taobaobao.ui.put.OrderFragment"
+        android:label="我的订单"
+        tools:layout="@layout/fragment_order">
+        <action
+            android:id="@+id/action_orderFragment_to_putFragment"
+            app:destination="@id/putFragment" />
+    </fragment>
+</navigation>
