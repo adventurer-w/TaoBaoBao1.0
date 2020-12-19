@@ -72,18 +72,14 @@ public class BuyFragment extends Fragment {
         refreshLayout = view.findViewById(R.id.refreshLayout);
         recyclerView.setHasFixedSize(true);
         recyclerView.setNestedScrollingEnabled(false);  //避免滑动卡顿
+        list.clear();
+        wzy();
 
     }
 
     @Override
-    public void onStart() {
-        super.onStart();
-        wzy();
-        Start();
-    }
-
-    private void Start() {
-
+    public void onResume() {
+        super.onResume();
         list.clear();
         i = 0;
         new Thread(() -> {
@@ -103,7 +99,8 @@ public class BuyFragment extends Fragment {
                 responseData = response.body().string();
                 getfeedback(responseData);
             } catch (IOException e) {
-                if (flag == 0) {
+                    list.clear();
+                    responseData="";
                     flag = 1;
                     Map map2 = new HashMap();
                     map2.put("type", 2);
@@ -112,15 +109,14 @@ public class BuyFragment extends Fragment {
                     getActivity().runOnUiThread(() -> {
                         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
                         recyclerView.setAdapter(new BuyAdapter(getActivity(), list));
-
                     });
-                }
+
                 e.printStackTrace();
             }
         }).start();
 
-
     }
+
 
     public void getfeedback(String responseData) {
         if (responseData != "") {
@@ -182,7 +178,7 @@ public class BuyFragment extends Fragment {
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
 
-                Start();
+                onResume();
                 refreshlayout.finishRefresh(1000/*,false*/);
 
             }
